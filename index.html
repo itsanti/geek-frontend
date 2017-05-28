@@ -2,12 +2,16 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Geek University</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="border-top-grey">
-      <div class="header-inner">
+      <div class="header-inner container">
         <div id="logo" class="fleft">
           <a href="/"><img height="51" width="151" src="img/logo.png"/></a>
         </div>
@@ -17,12 +21,247 @@
           <div></div>
         </div>
         <div id="cart" class="fright">
-          <img src="img/cart.png" class="fleft"><div>My Account <span class="caret"></span></div>
+          <img src="img/cart.png" class="fleft"><div class="bg-pink">My Account <span class="caret"></span></div>
         </div>
       </div>
       <nav class="border-top-grey">
-
+        <ul>
+          <li><a href="">home</a></li>
+          <li><a href="">man</a></li>
+          <li><a href="">women</a></li>
+          <li><a href="">kids</a></li>
+          <li><a href="">accesories</a></li>
+          <li><a href="">featured</a></li>
+          <li><a href="">hot deals</a></li>
+        </ul>
       </nav>
     </header>
+    <div id="slider-wrapper">
+      <div id="slider" class="container">
+        <div id="item" class="col-xs-12">
+          <img src="img/slider/s1brand.png">
+          <img src="img/slider/s1man.png">
+        </div>
+      </div>
+    </div>
+    <div class="container" id="category">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="cat-item">
+            <div class="cat-badge"><p class="cat-promo">hot deal</p><p class="cat-name pink">for men</p></div>
+            <img src="img/cat/topleft.png">
+          </div>
+          <div class="cat-item">
+            <div class="cat-badge"><p class="cat-promo">luxirous & trendy</p><p class="cat-name pink">accesories</p></div>
+            <img src="img/cat/botleft.png">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="cat-item">
+            <div class="cat-badge"><p class="cat-promo">30% offer</p><p class="cat-name pink">women</p></div>
+            <img src="img/cat/topright.png">
+          </div>
+          <div class="cat-item">
+            <div class="cat-badge"><p class="cat-promo">new arrivals</p><p class="cat-name pink">for kids</p></div>
+            <img src="img/cat/botright.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="product">
+      <header>
+        <h1>fetured items</h1>
+        <p class="description">Shop for items based on what we featured in this week</p>
+      </header>
+      <div class="row">
+        <div class="pr-wrapper col-lg-3 col-md-6">
+          <div class="pr-item">
+            <img src="img/pr/pr1.png">
+            <p class="pr-title">Mango  People  T-shirt</p>
+            <p class="pr-price pink">$52.00</p>
+          </div>
+        </div>
+        <div class="pr-wrapper col-lg-3 col-md-6">
+          <div class="pr-item">
+            <img src="img/pr/pr2.png">
+            <p class="pr-title">Mango  People  T-shirt</p>
+            <p class="pr-price pink">$52.00</p>
+          </div>
+        </div>
+        <div class="pr-wrapper col-lg-3 col-md-6">
+          <div class="pr-item">
+            <img src="img/pr/pr3.png">
+            <p class="pr-title">Mango  People  T-shirt</p>
+            <p class="pr-price pink">$52.00</p>
+          </div>
+        </div>
+        <div class="pr-wrapper col-lg-3 col-md-6">
+          <div class="pr-item">
+            <img src="img/pr/pr4.png">
+            <p class="pr-title">Mango  People  T-shirt</p>
+            <p class="pr-price pink">$52.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="pr-wrapper col-lg-3 col-md-6">
+          <div class="pr-item">
+            <img src="img/pr/pr5.png">
+            <p class="pr-title">Mango  People  T-shirt</p>
+            <p class="pr-price pink">$52.00</p>
+          </div>
+        </div>
+        <div class="pr-wrapper col-lg-3 col-md-6">
+          <div class="pr-item">
+            <img src="img/pr/pr6.png">
+            <p class="pr-title">Mango  People  T-shirt</p>
+            <p class="pr-price pink">$52.00</p>
+          </div>
+        </div>
+        <div class="pr-wrapper col-lg-3 col-md-6">
+          <div class="pr-item">
+            <img src="img/pr/pr7.png">
+            <p class="pr-title">Mango  People  T-shirt</p>
+            <p class="pr-price pink">$52.00</p>
+          </div>
+        </div>
+        <div class="pr-wrapper col-lg-3 col-md-6">
+          <div class="pr-item">
+            <img src="img/pr/pr8.png">
+            <p class="pr-title">Mango  People  T-shirt</p>
+            <p class="pr-price pink">$52.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="browse-wrapper">
+        <a href="#" class="btn browse bg-pink">Browse All Product <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <div class="container">
+      <div id="feature">
+        <div class="offer"><p>30% <span class="pink">offer</span></p><p class="offer-small">for women</p></div>
+        <img src="img/banner/banner.png">
+        <div class="feature-wrapper">
+          <div class="feature-item feature-top">
+            <h2 class="feature-title">Free Delivery</h2>
+            <p class="feature-description">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+          </div>
+          <div class="feature-item feature-middle">
+            <h2 class="feature-title">Sales & discounts</h2>
+            <p class="feature-description">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+          </div>
+          <div class="feature-item feature-bottom">
+            <h2 class="feature-title">Quality assurance</h2>
+            <p class="feature-description">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="social-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div id="comments">
+              <div class="comment">
+                <img src="img/comments/a1.png" class="avatar">
+                <p class="comment-text">"Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium"</p>
+                <p class="comment-who pink">Bin Burhan</p>
+                <p class="comment-city">Dhaka, Bd</p>
+              </div>
+              <img src="img/comments/nav.png" id="comments-navigate">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div id="subscribe">
+              <h2>Subscribe</h2>
+              <p>for our newletter and promotion</p>
+              <div class="">
+                <div class="input-group">
+                  <input type="text" class="form-control sub-ctrl" placeholder="Enter Your Email">
+                  <span class="input-group-btn">
+                    <button class="btn btn-sub bg-pink" type="button">Subscribe</button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="footer">
+      <div class="row">
+        <div class="col-lg-5">
+          <div id="about">
+            <img height="51" width="151" src="img/logo.png"/>
+            <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.</p>
+            <p>Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+          </div>
+        </div>
+        <div class="col-lg-7" id="footer-navs">
+          <div class="row">
+            <div class="col-lg-4">
+              <h2 class="pink">company</h2>
+              <ul class="footer-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">How it Works</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <h2 class="pink">information</h2>
+              <ul class="footer-nav">
+                <li><a href="#">Tearms & Condition</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">How to Buy</a></li>
+                <li><a href="#">How to Sell</a></li>
+                <li><a href="#">Promotion</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <h2 class="pink">shop category</h2>
+              <ul class="footer-nav">
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Child</a></li>
+                <li><a href="#">Apparel</a></li>
+                <li><a href="#">Brows All</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="copy-wrapper">
+      <div class="container" id="copy">
+        <p>&copy; 2017  Brand  All Rights Reserved.</p>
+        <ul>
+          <li><a href="#facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="#twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          <li><a href="#pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+          <li><a href="#google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    $('.pr-item').hover(
+      function(){
+        var $elemHover = $('<div id="pr-item-hover" style="">');
+        var $elemCart = $('<div id="pr-add-cart" style="">');
+        $elemCart.text('Add to Cart');
+        $(this).css('box-shadow','7px 7px 12px 0px rgba(0,0,0,0.16)');
+        $(this).append($elemHover, $elemCart);
+      },
+      function(){
+        $(this).css('box-shadow','none');
+        $(this).find('#pr-item-hover').remove();
+        $(this).find('#pr-add-cart').remove();
+      }
+    );
+  </script>
   </body>
 </html>
